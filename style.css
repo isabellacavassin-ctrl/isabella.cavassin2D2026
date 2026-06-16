@@ -1,0 +1,83 @@
+/* Container Principal do Post */
+.post-alimentacao {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 30px auto;
+    color: #2c3e50;
+}
+
+/* Título com sotaque de cor (Estética Fitness/Menta) */
+.post-alimentacao h2 {
+    color: #16a085;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.post-alimentacao p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Caixa de Destaque da Regra de Ouro (Foco em UX de Escaneabilidade) */
+.regra-ouro {
+    background-color: #e8f8f5;
+    border-left: 5px solid #16a085;
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0;
+    color: #117a65;
+    font-size: 1.05rem;
+}
+
+/* Configuração do Layout em Duas Colunas (Flexbox) */
+.treino-colunas {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Cartões das Colunas */
+.coluna-card {
+    flex: 1;
+    background-color: #f9fbfb;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eaeded;
+    transition: transform 0.2s ease;
+}
+
+/* Pequeno efeito interativo ao passar o rato */
+.coluna-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.coluna-card h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Nota de rodapé/Aviso nutricional secundário */
+.aviso-nutricional {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* UX Responsivo: Transforma em uma única coluna em ecrãs de telemóvel */
+@media (max-width: 650px) {
+    .treino-colunas {
+        flex-direction: column;
+    }
+}
